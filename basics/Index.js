@@ -198,6 +198,8 @@ tn = document.getElementsByTagName('div');
 // function summ(a,b){
 //     return a+b;
 // }
+
+
 summm=(a,b)=>{
     return a+b;
 }
@@ -225,5 +227,4 @@ setInterval(logKaro, 2000);
 // parsed = JSON.parse('{"name":"harry","length":1, "a":{this:"that"}}');
 // console.log(parsed);
 
-a=34;
-console.log('this is my ${a}');
+
