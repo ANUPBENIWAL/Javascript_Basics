@@ -6,8 +6,8 @@
 // console.error("This is an error");
     
 // javascript variales
-var number1=34;
-var number2=23;
+// var number1=34;
+// var number2=23;
 //console.log(number1+number2);    
 
 // data types in javascript
@@ -41,9 +41,9 @@ var arr1=[1,2,3,4,5,'anu'];
 //console.log(arr1);
 
 //operator in javascript
-var a=12;
-var b=13;
-// console.log('the value of a+b',a+b);
+// var a=12;
+// var b=13;
+// // console.log('the value of a+b',a+b);
 // console.log('the value of a-b',a-b);
 // console.log('the value of a*b',a*b);
 // console.log('the value of a/b',a/b);
@@ -200,15 +200,15 @@ tn = document.getElementsByTagName('div');
 // }
 
 
-summm=(a,b)=>{
-    return a+b;
-}
-logKaro = ()=>{
-    document.querySelectorAll('.container')[1].innerHTML="<b> Set interval fired</b>"
+// summm=(a,b)=>{
+//     return a+b;
+// }
+// logKaro = ()=>{
+//     document.querySelectorAll('.container')[1].innerHTML="<b> Set interval fired</b>"
     //console.log("I am your log")
-}
+// }
 // setTimeout(logKaro,2000);
-setInterval(logKaro, 2000);
+// setInterval(logKaro, 2000);
 // clr = setInterval(logKaro, 2000);
 // use clearInterval(clr) / clearTimeout(clr) to cancel setInterval/setTimeout
 
@@ -225,6 +225,253 @@ setInterval(logKaro, 2000);
 // console.log(jso);
 // console.log(typeof jso);
 // parsed = JSON.parse('{"name":"harry","length":1, "a":{this:"that"}}');
-// console.log(parsed);
+
+// variables:- let and const
+// let:-Variables defined with let have Block Scope
+// const:-A const variable cannot be reassigned 
+
+// let m=3;
+// console.log(m);
+// const n = 3; 
+// console.log(n);
+
+// JavaScript data types:-
+// primitive data types(1. String
+//     2. Number
+//     3. Bigint
+//     4. Boolean
+//     5. Undefined
+//     6. Null
+//     7. Symbol) 
+// non primitive data types(object, array)
+// let o="Anup";
+// let p=3;
+// let q=BigInt("45613");
+// let r=true;
+// let s;
+// let t=null;
+// console.log(o,p,q,r,s,t);
+
+// const a1 = {
+//     name:"Himank",
+//     age:3
+// }
+// a1['name']='anup';
+// console.log(typeof a1);
+
+// Arithametic operators-----------
+// let a2=2;
+// let b2=3;
+// console.log("a2+b2:",a2+b2);
+// console.log("a2-b2:",a2-b2);
+// console.log("a2*b2:",a2*b2);
+// console.log("a2/b2:",a2/b2);
+// console.log("a2%b2:",a2%b2);
+// console.log("a2++:",a2++);
+// console.log("++a2:",++a2);
+// console.log("a2--:",a2--);
 
 
+//Assignment operators-----------
+// console.log("a2+=b2:",a2+=b2);
+// console.log("a2-=b2:",a2-=b2);
+// console.log("a2*=b2:",a2*=b2);
+// console.log("a2/=b2:",a2/=b2);
+// console.log("a2%=b2:",a2%=b2);
+
+// logical operators-----------
+
+// console.log(true && true);
+// console.log(true && false);
+// console.log(false && true);
+// console.log(false && false);
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false || true);
+// console.log(false || false);
+// console.log(!true);
+// console.log(!false);
+
+
+// Comparison operators------------
+// let comp1=4;
+// let comp2="4";
+// console.log("comp1==comp2:-",comp1==comp2);
+// console.log("comp1===comp2:-",comp1===comp2);
+// console.log("comp1!=comp2:-",comp1!=comp2);
+// console.log("comp1!==comp2:-",comp1!==comp2);
+
+// let age1=prompt("what is your age?")
+// if(age1>10 && age1<20){
+//     console.log("Your age lies between 10 and 20");
+// }
+// else{
+//     console.log("Your age doesnt lies between 10 and 20");
+// }
+
+// switch case---------      (prompt string value" " || change int)
+// let age1=prompt("what is your age?")
+// age1 = Number.parseInt(age1);
+// switch(age1){
+//     case 12:
+//         console.log("Your age is 12")
+//         break;
+//     case 13:
+//         console.log("Your age is 13");
+//         break;
+//     default:
+//         console.log("Your age is not special");
+// }
+
+// let num = prompt('what is your age?');
+// num = Number.parseInt(num);
+// if(num % 2 == 0 && num % 3 == 0){
+//     console.log('Your number is divisible by 2 and 3');
+// }
+// else {
+//     console.log('Your number is not divisible by 2 and 3');
+// }
+
+// Ternary oprerator-----------
+// let age2 = prompt('what is your age?');
+// let p = age2>18 ? "you can drive":"you cannot drive";
+// console.log(p);
+
+// Loops----------
+// Program to add first n natural numbers
+
+// let n1 = prompt('Enter the value of n:');
+// n1 = Number.parseInt(n1);
+// let sum=0;
+// for (let i = 0; i < n1; i++){
+//     sum += (i+1);
+// }
+// console.log('Sum of first:'+ n1 + " "+"Natural numbers is" + sum);
+
+// let obj1 = {
+//     harry: 85,
+//     anu: 57,
+//     himank:99
+// }
+// for in loop
+// for (let a in obj1){
+//     console.log('Marks of'+' '+ a +' ' + 'are'+' ' + obj1[a]);
+// }
+// for of loop
+// for (let b of 'anu'){
+//      console.log(b);
+// }
+
+// while loop
+// let n2 = prompt('Enter the value of n')
+// n2 = Number.parseInt(n2);
+// let num1 = 0;
+// while(num1<n2){
+//     console.log(num1);
+//     num1++;
+// }
+
+// do while loop
+// do{
+//     console.log(num1);
+//     num1++;
+// }while(num1<n2);
+
+// Function -----------------
+// function onePlusAvg(x,y){
+//     return 1 + (x + y)/2
+// } 
+// console.log(onePlusAvg(5,8));
+
+// const sum = (x,y)=>{
+//     return x+y; 
+// }
+// console.log(sum(5,8));
+
+// const hello = ()=>{
+//     console.log("hi");
+// }
+// hello();
+
+// let marks1 = {
+//     harry: 92,
+//     anu:90
+// }
+// for (let i=0; i<Object.keys(marks1); i++){
+//     console.log('The marks of '+ Object.keys(marks1)[i] + 'are'+ marks1[Object.keys(marks1)[i]]);
+// }
+
+// let cn = 5;
+// let num3;
+// while (num3 != cn){
+//     num3=prompt('Enter a number')
+//     console.log("Try again")
+// }
+// console.log('You have entered a correct number')
+
+// const mean = (a,b, c, d) =>{
+//     return (a + b + c + d)/4
+// }
+// console.log(mean(4,5,5,6));
+
+// let name1='Anup';
+// console.log(name1.length);
+// console.log(name1[1]);
+// console.log(name1.toUpperCase());
+// console.log(name1.toLowerCase());
+// console.log(name1.slice(2,3));
+// console.log(name1.replace('An','r'));
+// let friends = 'kamal';
+// console.log(name1.concat('is a friend of',' ', friends, ' ' , 'ok'));
+ 
+let str = "Har\"";
+console.log(str.length);
+
+const sentence = "The quick brown fox jumps over the lazy dog.";
+const word = "foxs";
+console.log(sentence.includes(word));
+console.log(`The word "${word}" ${sentence.includes(word)?"is":"is not"} in the sentence`);
+
+
+
+
+// Template literals
+// let boy1 = 'Pramod';
+// let boy2 = 'Nikhal';
+// let sentence = `${boy1} is a friend of ${boy2}`;
+// console.log(sentence);
+
+// Escape sequence characters
+// let fruits = 'bana\'na';
+// console.log(fruits);
+
+
+
+
+
+
+
+
+// let mapArr = [1,2,3,4,5,6,7,8,9];
+
+// mapArr.forEach((v) => {
+
+//     console.log("For each", v);
+
+// });
+
+// let marr = mapArr.map((v) => {
+//      return v + 1;
+// })
+
+// let farr = mapArr.filter((v) => {
+//     return v > 5;
+// });
+
+//reduce
+// let rArr = mapArr.reduce((v1, v2) => {
+//    return v1 * v2;
+// });
+
+
+// console.log("new Array", rArr);
