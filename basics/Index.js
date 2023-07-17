@@ -424,13 +424,95 @@ tn = document.getElementsByTagName('div');
 // let friends = 'kamal';
 // console.log(name1.concat('is a friend of',' ', friends, ' ' , 'ok'));
  
-let str = "Har\"";
-console.log(str.length);
+// let str = "Har\"";
+// console.log(str.length);
 
-const sentence = "The quick brown fox jumps over the lazy dog.";
-const word = "foxs";
-console.log(sentence.includes(word));
-console.log(`The word "${word}" ${sentence.includes(word)?"is":"is not"} in the sentence`);
+// const sentence = "The quick brown fox jumps over the lazy dog.";
+// const word = "foxs";
+// console.log(sentence.includes(word));
+// console.log(`The word "${word}" ${sentence.includes(word)?"is":"is not"} in the sentence`);
+
+// let str3 = "Please give Rs 1000"
+// let amount = str3.slice("Please give Rs ".length);
+// console.log(amount);
+
+// Array-------------
+// let marks_class_12 = [91, 94,83,false, 'Not Present'];
+// console.log(marks_class_12);
+// console.log(marks_class_12.length);
+// console.log(typeof marks_class_12);
+// console.log(marks_class_12[3]);
+// marks_class_12[5]=87;
+// console.log(marks_class_12[5]);
+// for (i=0; i<marks_class_12.length; i++){
+//     console.log(marks_class_12[i]);
+// }
+
+// Array Methods-----
+let num2 = [1,2,3,4,34];
+// let b4 = num2.toString();
+// console.log(b4);
+// let c3=num2.join('_');
+// console.log(c3);
+// console.log(num2.length);
+// let r = num2.pop();
+// console.log(r);
+// console.log(num2.length);
+// console.log(num2,r);
+// let r1 = num2.push(26);
+// console.log(num2,r1);
+// console.log(num2.length);
+// let r = num2.shift();
+// console.log(num2,r);
+// let r1 = num2.unshift(2,'Himank');
+// console.log(num2,r1);
+// let num2_more = [5,6,7,8];
+// let newArray = num2.concat(num2_more,num2);
+// console.log(newArray);
+// console.log(num2,num2_more);
+// let del = delete num2[2];
+// console.log(num2.length,num2);
+// let compare=(a,b)=>{
+//     return a-b;
+// }
+// num2.sort(compare);
+// console.log(num2);
+
+// let deleteValue= num2.splice(2,1,45,46);
+// console.log(deleteValue);
+// console.log(num2);
+// let p1 = num2.slice(1,4);
+// console.log(p1);
+
+// Array loop throw--
+// for(i=0;i<num2.length;i++){
+//     console.log(num2[i]*num2[i]);
+// }
+// num2.forEach((element)=>{
+//     console.log( element*element)
+// });
+
+// let name2 = 'Anup';
+// let arr2 = Array.from(name2);
+// console.log(arr2);
+
+// for(i of num2){
+//     console.log(i);
+// }
+
+// for(item in num2){
+//     console.log(num2[item]);
+//     console.log(item);
+// }
+
+
+
+// const myArr5 = [[1,2],[3,4],[5,6]];
+
+// const newArr = myArr5.flat();
+//  console.log(newArr);
+
+
 
 
 
@@ -446,12 +528,6 @@ console.log(`The word "${word}" ${sentence.includes(word)?"is":"is not"} in the 
 // console.log(fruits);
 
 
-
-
-
-
-
-
 // let mapArr = [1,2,3,4,5,6,7,8,9];
 
 // mapArr.forEach((v) => {
@@ -463,6 +539,7 @@ console.log(`The word "${word}" ${sentence.includes(word)?"is":"is not"} in the 
 // let marr = mapArr.map((v) => {
 //      return v + 1;
 // })
+// console.log(marr);
 
 // let farr = mapArr.filter((v) => {
 //     return v > 5;
@@ -475,3 +552,10 @@ console.log(`The word "${word}" ${sentence.includes(word)?"is":"is not"} in the 
 
 
 // console.log("new Array", rArr);
+
+ let a = [2,3,8,10,4,1];
+
+ 
+
+
+ 
