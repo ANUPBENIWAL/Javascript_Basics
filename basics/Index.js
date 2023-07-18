@@ -552,8 +552,30 @@ let num2 = [1,2,3,4,34];
 
 
 // console.log("new Array", rArr);
+// console.error("You made a mistake");
+// console.table(["Audi", "Volvo", "Ford"]);
+// console.time();
+// for (let i = 0; i < 100000; i++) {
+  
+// }
+// console.timeEnd();
+// console.log("Hello world!");
+// console.group();
+// console.log("Hello again, this time inside a group!");
 
- let a = [2,3,8,10,4,1];
+
+
+// alert('Enter the value of a!')
+// let a4 = prompt('enter a here','45')
+// a4 = Number.parseInt(a4);
+// alert('You entered a4 of type'+(typeof a4));
+// let write = confirm('Do you want to write it to the page');
+// if(write){
+//     document.write(a4);
+// }else{
+//     document.write('Please allow me to write');
+// }
+  
 
  
 
