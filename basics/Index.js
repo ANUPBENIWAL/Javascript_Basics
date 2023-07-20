@@ -579,5 +579,8 @@ let num2 = [1,2,3,4,34];
 
  
 
-
- 
+console.log(document.body.firstChild);
+a=document.body.firstChild;
+console.log(a.parentNode);
+console.log(a.parentElement);
+console.log(a.firstChild.nextSibling)
