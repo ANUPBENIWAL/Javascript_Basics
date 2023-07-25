@@ -579,8 +579,27 @@ let num2 = [1,2,3,4,34];
 
  
 
-console.log(document.body.firstChild);
-a=document.body.firstChild;
-console.log(a.parentNode);
-console.log(a.parentElement);
-console.log(a.firstChild.nextSibling)
+// console.log(document.body.firstChild);
+// a=document.body.firstChild;
+// console.log(a.parentNode);
+// console.log(a.parentElement);
+// // console.log(a.firstChild.nextSibling)
+
+// let b5 =document.body;
+// console.log('First child of b is:', b5.firstChild)
+// console.log('First Element child of b is:', b5.firstElementChild);
+
+// const changeBgRed = () =>{
+//     document.body.firstElementChild.style.background = "red";
+// }
+
+let t = document.body.firstElementChild;
+console.log(t);
+console.log(t.rows);
+console.log(t.caption);
+ 
+
+
+
+
+
