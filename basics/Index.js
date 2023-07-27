@@ -593,11 +593,37 @@ let num2 = [1,2,3,4,34];
 //     document.body.firstElementChild.style.background = "red";
 // }
 
-let t = document.body.firstElementChild;
-console.log(t);
-console.log(t.rows);
-console.log(t.caption);
+// let t = document.body.firstElementChild;
+// console.log(t);
+// console.log(t.rows);
+// console.log(t.caption);
  
+// let id1= document.getElementById("id1");
+// let sp1 = document.getElementById("sp1");
+// console.log(id1);
+// console.log(id1.matches(".class"));
+// console.log(id1.matches(".box"));
+// console.log(sp1.closest('sp1'));
+// console.log(sp1.closest('#sp1'));
+// console.log(id1.contains(sp1));
+// console.log(document.body.getElementsByTagName('span'));
+// let html = document.getElementById("myP").innerHTML;
+// document.getElementById("demo").innerHTML = html;
+
+// console.log(document.body.textContent);
+
+
+// let attri = firsts.getAttribute("class")
+// console.log(attri);
+// console.log(firsts.hasAttribute("class"));
+// console.log(firsts.hasAttribute("style"));
+// firsts.setAttribute("hidden","true")
+
+
+
+
+
+
 
 
 
