@@ -619,10 +619,21 @@ let num2 = [1,2,3,4,34];
 // console.log(firsts.hasAttribute("style"));
 // firsts.setAttribute("hidden","true")
 
+// let e1 = document.getElementsByTagName('div')[0]
+//e1.innerHTML= e1.innerHTML + '<h1>Hello World!</h1>';
+// let div = document.createElement('div');
+// div.innerHTML = '<h1>Hello World!</h1>';
+// e1.appendChild(div);
+// e1.append(div);
+// e1.prepend(div);
+// e1.before(div);
+// e1.after(div);
+// e1.replaceWith(div);
 
-
-
-
+// first2.insertAjacentHTML('beforebegin','<div class="test">beforebegin</div>')
+// first2.insertAjacentHTML('beforeend','<div class="test">beforeend</div>')
+// first2.insertAjacentHTML('afterbegin','<div class="test">afterbegin</div>')
+// first2.insertAjacentHTML('afterend','<div class="test">afterend</div>')
 
 
 
