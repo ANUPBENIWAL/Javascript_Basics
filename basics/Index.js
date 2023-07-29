@@ -634,6 +634,28 @@ let num2 = [1,2,3,4,34];
 // first2.insertAjacentHTML('beforeend','<div class="test">beforeend</div>')
 // first2.insertAjacentHTML('afterbegin','<div class="test">afterbegin</div>')
 // first2.insertAjacentHTML('afterend','<div class="test">afterend</div>')
+// first3.className = "yello1";
+// first3.classList.toggle('red')
+// first3.classList.toggle('red')
+// first3.classList.add('blue')
+// console.log(first3.className);
+// first3.classList.contains('white')
+// first3.classList.remove('blue')
+// alert('Hello')
+// document.write('Hello world')
+// let serTime=setTimeout(function(){
+//     alert('I am inside of settimeout')
+// },2000)
+// clearTimeout(serTime);
+// console.log(serTime);
+const sum1 = (a,b)=>{
+    console.log("Yes")
+    a+b
+}
+setTimeout(sum1,1000,1,2)
+setInterval(function(){
+    alert('setInterval');
+},5000)
 
 
 
