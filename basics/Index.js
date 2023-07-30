@@ -648,14 +648,30 @@ let num2 = [1,2,3,4,34];
 // },2000)
 // clearTimeout(serTime);
 // console.log(serTime);
-const sum1 = (a,b)=>{
-    console.log("Yes")
-    a+b
+// const sum1 = (a,b)=>{
+//     console.log("Yes")
+//     a+b
+// }
+// setTimeout(sum1,1000,1,2)
+// setInterval(function(){
+//     alert('setInterval');
+// },5000)
+
+let xa =function(e){
+    console.log(e)
+    
+    alert('Hello World1!')
 }
-setTimeout(sum1,1000,1,2)
-setInterval(function(){
-    alert('setInterval');
-},5000)
+let yb = function(e){
+    console.log(e)
+    alert('Hello World2!')
+}
+btn.addEventListener("click",xa)
+btn.addEventListener("click",yb)
+let ab = prompt("What is your favorite number?")
+if(ab=="2"){
+    btn.removeEventListener('click',xa)
+}
 
 
 
