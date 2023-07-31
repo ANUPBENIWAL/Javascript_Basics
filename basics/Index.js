@@ -657,22 +657,60 @@ let num2 = [1,2,3,4,34];
 //     alert('setInterval');
 // },5000)
 
-let xa =function(e){
-    console.log(e)
+// let xa =function(e){
+//     console.log(e)
     
-    alert('Hello World1!')
-}
-let yb = function(e){
-    console.log(e)
-    alert('Hello World2!')
-}
-btn.addEventListener("click",xa)
-btn.addEventListener("click",yb)
-let ab = prompt("What is your favorite number?")
-if(ab=="2"){
-    btn.removeEventListener('click',xa)
-}
+//     alert('Hello World1!')
+// }
+// let yb = function(e){
+//     console.log(e)
+//     alert('Hello World2!')
+// }
+// btn.addEventListener("click",xa)
+// btn.addEventListener("click",yb)
+// let ab = prompt("What is your favorite number?")
+// if(ab=="2"){
+//     btn.removeEventListener('click',xa)
+// }
 
+
+console.log("hi");
+console.log("hello");
+console.log("hfer");
+
+function name(callback)  {
+    //code api call response
+    setTimeout(function() {
+        callback("data is available", 0);
+    }, 3000);
+}
+name((returnData, error) => {
+    console.log("error returned"+error);
+    if(error != null){
+        name((d, err) => {
+            console.log("return data first:- "+d) 
+            if(d != null){
+                name((d, err) => {
+                    console.log("return data second:- "+d) 
+                    if(d != null){
+                        name((d, err) => {
+                            console.log("return data third:- "+d) 
+                            if(d != null){
+                                name((d, err) => {
+                                  console.log("return data forth:- "+d) 
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    }
+ });
+
+
+
+console.log("after timeout")
 
 
 
