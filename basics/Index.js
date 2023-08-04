@@ -674,45 +674,60 @@ let num2 = [1,2,3,4,34];
 // }
 
 
-console.log("hi");
-console.log("hello");
-console.log("hfer");
+// console.log("hi");
+// console.log("hello");
+// console.log("hfer");
 
-function name(callback)  {
-    //code api call response
-    setTimeout(function() {
-        callback("data is available", 0);
-    }, 3000);
-}
-name((returnData, error) => {
-    console.log("error returned"+error);
-    if(error != null){
-        name((d, err) => {
-            console.log("return data first:- "+d) 
-            if(d != null){
-                name((d, err) => {
-                    console.log("return data second:- "+d) 
-                    if(d != null){
-                        name((d, err) => {
-                            console.log("return data third:- "+d) 
-                            if(d != null){
-                                name((d, err) => {
-                                  console.log("return data forth:- "+d) 
-                                });
-                            }
-                        });
-                    }
-                });
-            }
-        });
-    }
- });
+// function name(callback)  {
+//     //code api call response
+//     setTimeout(function() {
+//         callback("data is available", 0);
+//     }, 3000);
+// }
+// name((returnData, error) => {
+//     console.log("error returned"+error);
+//     if(error != null){
+//         name((d, err) => {
+//             console.log("return data first:- "+d) 
+//             if(d != null){
+//                 name((d, err) => {
+//                     console.log("return data second:- "+d) 
+//                     if(d != null){
+//                         name((d, err) => {
+//                             console.log("return data third:- "+d) 
+//                             if(d != null){
+//                                 name((d, err) => {
+//                                   console.log("return data forth:- "+d) 
+//                                 });
+//                             }
+//                         });
+//                     }
+//                 });
+//             }
+//         });
+//     }
+//  });
+// console.log("after timeout")
 
-
-
-console.log("after timeout")
-
-
+// let promise = new Promise(function(resolve, reject){
+//     alert('I am an alert in promise')
+//     return(23)
+// })
+// console.log("Hello")
+// setTimeout(function(){
+//     console.log('Hello in 2 seconds')
+// },2000)
+// console.log('My name is '+"john")
+// console.log(promise)
+// let pr = new Promise((resolve, reject)=>{
+//     console.log('Promise is pending')
+//     setTimeout(()=>{
+//         console.log('I am a promise and I am fulfilled')
+//         // resolve(true)
+//         reject(new Error )
+//     },5000)
+// })
+// console.log(pr)
 
 
 
