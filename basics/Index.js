@@ -709,25 +709,40 @@ let num2 = [1,2,3,4,34];
 //  });
 // console.log("after timeout")
 
-// let promise = new Promise(function(resolve, reject){
-//     alert('I am an alert in promise')
-//     return(23)
-// })
-// console.log("Hello")
-// setTimeout(function(){
-//     console.log('Hello in 2 seconds')
-// },2000)
-// console.log('My name is '+"john")
-// console.log(promise)
-// let pr = new Promise((resolve, reject)=>{
-//     console.log('Promise is pending')
-//     setTimeout(()=>{
-//         console.log('I am a promise and I am fulfilled')
-//         // resolve(true)
-//         reject(new Error )
-//     },5000)
-// })
-// console.log(pr)
+let promise = new Promise(function(resolve, reject){
+    alert('I am an alert in promise')
+    return(23)
+})
+console.log("Hello")
+setTimeout(function(){
+    console.log('Hello in 2 seconds')
+},2000)
+console.log('My name is '+"john")
+console.log(promise)
+let pr1 = new Promise((resolve, reject)=>{
+    console.log('Promise is pending')
+    setTimeout(()=>{
+        console.log('I am a promise and I am fulfilled')
+        resolve(true)
+         
+    },5000)
+})
+let pr2 = new Promise((resolve, reject)=>{
+    console.log('Promise is pending')
+    setTimeout(()=>{
+        console.log('I am a promise and I am fulfilled')
+        reject(new Error('I am an error') )
+    },5000)
+})
+
+console.log(pr1,pr2)
+pr1.then((value)=>{
+    console.log(value)
+})
+pr2.catch((error)=>{
+    console.log('some errot occurred in pr2')
+})
+
 
 
 
