@@ -709,40 +709,118 @@ let num2 = [1,2,3,4,34];
 //  });
 // console.log("after timeout")
 
-let promise = new Promise(function(resolve, reject){
-    alert('I am an alert in promise')
-    return(23)
-})
-console.log("Hello")
-setTimeout(function(){
-    console.log('Hello in 2 seconds')
-},2000)
-console.log('My name is '+"john")
-console.log(promise)
-let pr1 = new Promise((resolve, reject)=>{
-    console.log('Promise is pending')
-    setTimeout(()=>{
-        console.log('I am a promise and I am fulfilled')
-        resolve(true)
+// let promise = new Promise(function(resolve, reject){
+//     alert('I am an alert in promise')
+//     return(23)
+// })
+// console.log("Hello")
+// setTimeout(function(){
+//     console.log('Hello in 2 seconds')
+// },2000)
+// console.log('My name is '+"john")
+// console.log(promise)
+// let pr1 = new Promise((resolve, reject)=>{
+//     console.log('Promise is pending')
+//     setTimeout(()=>{
+//         console.log('I am a promise and I am fulfilled')
+//         resolve(true)
          
-    },5000)
-})
-let pr2 = new Promise((resolve, reject)=>{
-    console.log('Promise is pending')
-    setTimeout(()=>{
-        console.log('I am a promise and I am fulfilled')
-        reject(new Error('I am an error') )
-    },5000)
-})
+//     },5000)
+// })
+// let pr2 = new Promise((resolve, reject)=>{
+//     console.log('Promise is pending')
+//     setTimeout(()=>{
+//         console.log('I am a promise and I am fulfilled')
+//         reject(new Error('I am an error') )
+//     },5000)
+// })
 
-console.log(pr1,pr2)
-pr1.then((value)=>{
+// console.log(pr1,pr2)
+// pr1.then((value)=>{
+//     console.log(value)
+// })
+// pr2.catch((error)=>{
+//     console.log('some errot occurred in pr2')
+// })
+// let pr3 = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//         console.log('Resolved after 2 seconds')
+//         resolve(56)
+//     },2000)
+// })
+// pr3.then((value)=>{
+//     setTimeout(()=>{
+//         console.log(value)
+//         new Promise((resolve, reject)=>{
+//             console.log('value')
+//             resolve('Promise 2')
+
+//         })
+//     },1000)
+// })
+
+// const loadScript = (src)=>{
+//     return new Promise(resolve =>{
+//     let script = document.createElement('script')
+//     script.type = 'text/javascript'
+//     script.src = src
+//     document.body.appendChild(script)
+//     script.onload = (()=>{
+//         resolve(1)
+//     })
+//     script.onerror = () =>{reject(0)}
+// })
+// }
+// let pr4 = loadScript("http://localhost:3000/index.js")
+// pr4.then((value)=>{
+//     console.log(value)
+// }).then((error)=>{
+//     console.log('We are sorry but we are having problems loasing this script')
+// }).catch((error)=>{
+//     console.log('We are sorry but we are having problems loasing this script')
+// })
+
+// let p2 = new Promise ((resolve,reject)=>{
+//     setTimeout(() => {
+//         alert("Hey I am not resolved")
+//         resolve(1);
+//     }, 2000);
+// })
+// p2.then(()=>{
+//     console.log("Congratulations this promise is now resolved")
+
+// })
+
+let p3 = new Promise ((resolve,reject)=>{
+    setTimeout(() => {
+        resolve('value 3');
+    }, 1000);
+})
+let p4 = new Promise ((resolve,reject)=>{
+    setTimeout(() => {
+        resolve('value 4');
+    }, 2000);
+})
+let p5 = new Promise ((resolve,reject)=>{
+    setTimeout(() => {
+        resolve('value 5');
+    }, 3000);
+})
+p3.then((value)=>{
+    console.log(value)
+
+})
+p4.then((value)=>{
+    console.log(value)
+
+})
+p5.then((value)=>{
+    console.log(value)
+
+})
+let promise_all = Promise.all([p3,p4,p5])
+promise_all.then((value) =>{
     console.log(value)
 })
-pr2.catch((error)=>{
-    console.log('some errot occurred in pr2')
-})
-
-
 
 
