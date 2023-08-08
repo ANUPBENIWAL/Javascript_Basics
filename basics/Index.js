@@ -791,36 +791,44 @@ let num2 = [1,2,3,4,34];
 
 // })
 
-let p3 = new Promise ((resolve,reject)=>{
-    setTimeout(() => {
-        resolve('value 3');
-    }, 1000);
-})
-let p4 = new Promise ((resolve,reject)=>{
-    setTimeout(() => {
-        resolve('value 4');
-    }, 2000);
-})
-let p5 = new Promise ((resolve,reject)=>{
-    setTimeout(() => {
-        resolve('value 5');
-    }, 3000);
-})
-p3.then((value)=>{
-    console.log(value)
+// let p3 = new Promise ((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve('value 3');
+//     }, 1000);
+// })
+// let p4 = new Promise ((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve('value 4');
+//     }, 2000);
+// })
+// let p5 = new Promise ((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve('value 5');
+//     }, 3000);
+// })
+// p3.then((value)=>{
+//     console.log(value)
 
-})
-p4.then((value)=>{
-    console.log(value)
+// })
+// p4.then((value)=>{
+//     console.log(value)
 
-})
-p5.then((value)=>{
-    console.log(value)
+// })
+// p5.then((value)=>{
+//     console.log(value)
 
-})
-let promise_all = Promise.all([p3,p4,p5])
-promise_all.then((value) =>{
-    console.log(value)
-})
+// })
+// let promise_all = Promise.all([p3,p4,p5])
+// promise_all.then((value) =>{
+//     console.log(value)
+// })
 
+
+async function harry(){
+    let delhiWeather = new Promise((resolve, reject)={
+        setTimeout(()=>{
+            resolve("27 ")
+        },1000)
+    })
+}
 
