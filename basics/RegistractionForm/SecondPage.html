@@ -24,6 +24,15 @@
                 Mother's Name<input type="text" id="Mother" placeholder="Mother's Name" aria-required="true">
             </div><br>
             <div>
+                <lable>Gender</lable>
+                <input type="radio" id="male" name="gender">Male &nbsp;
+                <input type="radio" id="female" name="gender">Female
+            </div><br>
+            <div>
+                <input type="checkbox" id="age" value="abc">Age&nbsp;
+                <input type="checkbox" id="emailadd" value="xyz">Email
+            </div><br>
+            <div>
                 Address
                 <input type="text-box" id="Addresses" >
             </div><br>
@@ -31,16 +40,21 @@
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="abc@gmail.com"/>
                 <div class="error"></div>
+            </div><br>
             <div>
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password"placeholder="Password here"/>
                 <div class="error"></div>
-            <div>
+            </div><br>
+
+            <div>    
                 <button id="btn" type='button' >Submit</button>
                 <button id="reset" type='reset' >Reset</button>
+                <a href="FirstPage.html">
+                <button id="back" type="back">Back</button></a>
             </div>
-            </form>
-        </div>
+        </form>
+    </div>
     <div>
         <p class="demo"></p>
         <p class="demo1"></p>
@@ -49,6 +63,7 @@
         <p class="demo4"></p>
         <p class="demo5"></p>
     </div>
-    <script src="Form.js">form</script>    
+    <script src="SecondPage.js">form</script>    
+    
 </body>
 </html>
