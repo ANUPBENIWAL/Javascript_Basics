@@ -1,0 +1,19 @@
+.container{
+    background-color: aqua;
+    border: 2px;
+    display: block;
+}
+.row{
+    border: solid 2px;
+    border-color: red;
+}
+.col,.col-4,.col-8{
+    border: solid 3px;
+    border-color: yellow;
+}
+footer{
+    background-color: blue;
+}
+.col-4 .col-8{
+   flex-grow: 1;
+}

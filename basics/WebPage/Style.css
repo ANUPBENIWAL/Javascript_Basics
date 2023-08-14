@@ -114,6 +114,7 @@ body{
       }
       .slider{
         display: flex;
+        transition: transform 0.5s ease-in-out;
       }
       .slider{
         flex: 0 0 100%;
