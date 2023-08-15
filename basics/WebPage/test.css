@@ -1,0 +1,65 @@
+.top_parent{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+  }
+  .left_div{
+    flex: 1;
+    background-color: gray;
+  }
+  .right_div{
+    flex: 10;
+    background-color: red;
+  }
+  #news{
+    display: flex;
+    margin-top: 0px;
+    height: 300px;
+    width: 500px;
+    margin-left:0;
+}
+.notification{
+    height: 300px;
+    width: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: blue;
+}
+#marquee{
+    display: flex;
+    height: 100%;
+}
+.gallery{
+    margin-top: 0px;
+    display: grid;
+    height: fit-content;
+    width: fit-content;
+}
+.slideshow-container {
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }

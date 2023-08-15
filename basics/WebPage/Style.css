@@ -18,7 +18,16 @@ body{
     flex-direction: row;
     justify-self: center;
     margin-top: 0px;
+    height: 30px;
+    padding-bottom: 25px;
 
+}
+#mid{
+  align-content: center;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
 }
 .page{
     margin-top: 0px;
@@ -33,6 +42,7 @@ body{
     flex-grow: 1;
     text-align: center;
 }
+
 .dropdown{
     nav-down: auto;
 
@@ -47,6 +57,7 @@ body{
     background-color: blue;
     
 }
+
 #marquee{
     display: flex;
     height: 100%;
@@ -103,35 +114,98 @@ body{
     padding: 10px;
   }
   
-      .accordion-item.active .accordion-content{
-        display: block;
-      }
-      .slider-container{
-        width: 800px;
-        position: relative;
-        overflow: hidden;
-        border: 1px solid #000;
-      }
-      .slider{
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-      .slider{
-        flex: 0 0 100%;
-        height: 400px;
-        background-size: cover;
-        background-position: center;
-      }
-      .slide.active{
-        transform: translateX(0);
-      }
-      .slider-controls{
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .prev-slide,.next-slide{
-        margin: 0 10px;
-        
-      }
+.accordion-item.active .accordion-content{
+display: block;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 500px;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#news{
+  flex-grow: 1;
+}
+.slideshow-container{
+  flex-grow: 4;
+  margin-top: 0px;
+}
+
+

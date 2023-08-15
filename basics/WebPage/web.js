@@ -16,28 +16,29 @@ accordionItems.forEach(item => {
 
   });
 });
-const slider = document.querySelector(".slider");
-const sliders  = document.querySelectorAll(".slide");
-const prevBtn  = document.querySelectorAll(".prer-slide");
-const nextBtn  = document.querySelectorAll(".next-slide");
-let slideIndex=0;
-slides[slideIndex].classList.add('active');
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
-function prevSlide(){
-  slides[slideIndex].classList.remove('active');
-  slideIndex = (slideIndex ===0)? slides.length - 1 : slideIndex - 1;
-  slides[slideIndex].classList.add('active');
-  slider.style.transform = `translateX(-${slideIndex*100}%)`;
+let slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function nextSlide(){
-  slides[slideIndex].classList.remove('active');
-  slideIndex = (slideIndex ===slides.length - 1)? 0 : slideIndex + 1;
-  slides[slideIndex].classList.add('active');
-  slider.style.transform = `translateX(-${slideIndex*100}%)`;
-
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
