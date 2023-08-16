@@ -3,6 +3,10 @@
     border: 2px;
     display: block;
 }
+#grid{
+    flex-direction: row;
+    display: flex;
+}
 .row{
     border: solid 2px;
     border-color: red;
@@ -17,4 +21,28 @@ footer{
 .col-4, .col-8{
    flex-grow: 1;
    
+}
+.imgs{
+    height: 80px;
+    width: 100px;
+    border-radius: 2px;
+    border-color: blue;
+    padding-left: 60px;
+}
+.list{
+    list-style-type: none;
+    flex-grow: 1;
+    margin: 40px;
+    padding: 30px;
+    
+}
+.list{
+    border: solid;
+    height: auto;
+    width: 100px;
+    border: color 1px black ;
+    border-radius: 2px;
+}
+.p{
+    text-decoration: line-through;
 }
