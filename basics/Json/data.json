@@ -1,0 +1,38 @@
+{"em":[
+    {
+    "id":"1",
+    "Name": "Himank",
+    "Address":"Sithal",
+    "details":{
+        "roll_no":2,
+        "class": 9,
+        "subject":"maths"
+    }
+    
+    },
+    {
+    "id":"2",
+    "Name": "Himank kumar",
+    "Address":"Sithal jhunjhunu",
+    "details":{
+        "roll_no":3,
+        "class": 6,
+        "subject":"bio"
+    }
+        
+    },
+    {
+    "id":"4",
+    "Name": "Himank mahala",
+    "Address":"Sithal rajasthan",
+    "details":{
+        "roll_no":5,
+        "class": 4,
+        "subject":"arts"
+    }
+            
+    }
+]
+}
+            
+
