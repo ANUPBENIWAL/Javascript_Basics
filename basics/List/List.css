@@ -1,0 +1,22 @@
+body{
+    list-style-type: none;
+    display: flex;
+    flex-direction:column ;
+    text-align: center;
+}
+img{
+    border: none;
+    border-color: blue;
+    height: 100px;
+    width: 100px;
+}
+#first, #second , #third{
+    border: none;
+    border-color: red;
+    height: auto;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
