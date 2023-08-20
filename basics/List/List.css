@@ -3,20 +3,50 @@ body{
     display: flex;
     flex-direction:column ;
     text-align: center;
+    display: table;
 }
+.main{
+    display: table;
+    flex-direction: column;
+
+
+}
+
 img{
     border: none;
     border-color: blue;
     height: 100px;
     width: 100px;
 }
-#first, #second , #third{
+.product{
+    border: solid;
+    margin: 10px;
+}
+#first{
+    flex :1;
     border: none;
     border-color: red;
     height: auto;
-    width: 300px;
+    width: auto;
     text-align: center;
     padding: 20px;
     margin-left: 500px;
+    margin-top: 10px;
+    
+    
+}
+
+a{
+    text-decoration: line-through red;
+    
+    
+}
+#div1{
+    border: solid;
+    border-color: black;
+    height: auto;
+    width: auto;
+    text-align: center;
     margin-top: 20px;
+    padding: 5px;
 }
