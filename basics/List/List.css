@@ -6,8 +6,8 @@ body{
     display: table;
 }
 .main{
-    display: table;
-    flex-direction: column;
+    /* display: table; */
+    /* flex-direction: column; */
 
 
 }
@@ -23,14 +23,15 @@ img{
     margin: 10px;
 }
 #first{
-    flex :1;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
     border: none;
     border-color: red;
     height: auto;
-    width: auto;
+    width: 100%;
     text-align: center;
     padding: 20px;
-    margin-left: 500px;
+    margin-left: auto;
     margin-top: 10px;
     
     
