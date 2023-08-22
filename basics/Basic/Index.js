@@ -824,11 +824,11 @@ let num2 = [1,2,3,4,34];
 // })
 
 
-async function harry(){
-    let delhiWeather = new Promise((resolve, reject)={
-        setTimeout(()=>{
-            resolve("27 ")
-        },1000)
-    })
-}
+// async function harry(){
+//     let delhiWeather = new Promise((resolve, reject)={
+//         setTimeout(()=>{
+//             resolve("27 ")
+//         },1000)
+//     })
+// }
 
