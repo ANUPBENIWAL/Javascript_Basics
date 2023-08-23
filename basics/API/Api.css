@@ -34,18 +34,3 @@ img{
     
     
 }
-
-a{
-    text-decoration: line-through red;
-    
-    
-}
-#div1{
-    border: solid;
-    border-color: black;
-    height: auto;
-    width: auto;
-    text-align: center;
-    margin-top: 20px;
-    padding: 5px;
-}
