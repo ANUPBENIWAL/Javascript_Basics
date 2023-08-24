@@ -1,0 +1,49 @@
+.model{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    padding: 200px;
+}
+body{
+    
+}
+form{
+    align-content: end;
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    border: solid yellowgreen;
+    margin-left: 30%;
+    margin-top:10%;
+    margin-bottom: 10%;
+    margin-right: 15%;
+    position: absolute;
+    background-color: #32a852;
+
+}
+.container{
+    margin-top: 40px;
+    margin-left: 10px;
+    
+}
+.text{
+    font-size: 20px;
+    box-sizing:50px, 40px ;
+}
+input{
+    height: 30px;
+    width: 400px;
+    font-size:medium;
+    
+}
+.pass{
+    background-color: aliceblue;
+    
+}
+button{
+    margin-left: 40%;
+    justify-items: center;
+    color: green;
+    height: 30px;
+    width: 55;
+}
