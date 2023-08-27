@@ -123,3 +123,8 @@ body{
   display: grid;
   background-color: #818181;
 }
+#mid{
+  height: auto;
+  width: auto;
+  display: flex;
+}
