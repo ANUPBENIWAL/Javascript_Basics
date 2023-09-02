@@ -22,7 +22,7 @@ body{
 }
 .second{
     border: 1px solid;
-    height: 600px;
+    height: auto;
     width: 100%;
     
     display: grid;
@@ -123,8 +123,7 @@ body{
   display: grid;
   background-color: #818181;
 }
-#mid{
-  height: auto;
-  width: auto;
-  
+.img1{
+  height: 800px;
+  width: 600px;
 }
