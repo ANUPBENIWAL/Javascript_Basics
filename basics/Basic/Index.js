@@ -832,3 +832,70 @@ let num2 = [1,2,3,4,34];
 //     })
 // }
 
+
+// const createTodo = async (todo) => {
+//     let options = {
+//             method: "POST",
+//             headers: {
+//                     "Content-type": "application/json"
+//             },
+//             body: JSON.stringify(todo),
+//     }
+//     let p = await fetch('https://jsonplaceholder.typicode.com/posts', options)
+//     let response = await p.json()
+//     return response
+// }
+
+// const getTodo = async (id) => {
+//     let response = await fetch('https://jsonplaceholder.typicode.com/posts/' + id)
+//     let r = await response.json()
+//     return r
+// }
+
+// const mainFunc = async () => {
+//     let todo = {
+//             title: 'Harry2',
+//             body: 'bhai2',
+//             userId: 1100,
+//     }
+//     let todor = await createTodo(todo)
+//     console.log(todor)
+//     console.log(await getTodo(101))
+// }
+
+// mainFunc()
+
+document.cookie = "name= Himank";
+document.cookie = "name1 = anup";
+var key = prompt("enter your key");
+var value = prompt("enter your value");
+document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+
+console.log(document.cookie)
+
+let key = prompt("Enter key you want to set")
+let value = prompt("Enter value you want to set")
+
+/*localStorage------------*/
+localStorage.setItem(key, value)
+
+console.log(`The value at ${key} is ${localStorage.getItem(key)}`)
+
+if (key == "red" || key == "blue") {
+        localStorage.removeItem(key)
+}
+
+if (key == 0) {
+        localStorage.clear()
+}
+
+
+sessionStorage.getItem("name")
+sessionStorage.clear()
+sessionStorage.removeItem("name")
+sessionStorage.setItem("name", "harry")
+sessionStorage.removeItem("name")
+window.onstorage = (e) => {
+        alert("changed")
+        console.log(e)
+}
