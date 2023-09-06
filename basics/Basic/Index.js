@@ -865,37 +865,364 @@ let num2 = [1,2,3,4,34];
 
 // mainFunc()
 
-document.cookie = "name= Himank";
-document.cookie = "name1 = anup";
-var key = prompt("enter your key");
-var value = prompt("enter your value");
-document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+// document.cookie = "name= Himank";
+// document.cookie = "name1 = anup";
+// var key = prompt("enter your key");
+// var value = prompt("enter your value");
+// document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
 
-console.log(document.cookie)
+// console.log(document.cookie)
 
-let key = prompt("Enter key you want to set")
-let value = prompt("Enter value you want to set")
+// let key = prompt("Enter key you want to set")
+// let value = prompt("Enter value you want to set")
 
-/*localStorage------------*/
-localStorage.setItem(key, value)
+// /*localStorage------------*/
+// localStorage.setItem(key, value)
 
-console.log(`The value at ${key} is ${localStorage.getItem(key)}`)
+// console.log(`The value at ${key} is ${localStorage.getItem(key)}`)
 
-if (key == "red" || key == "blue") {
-        localStorage.removeItem(key)
-}
+// if (key == "red" || key == "blue") {
+//         localStorage.removeItem(key)
+// }
 
-if (key == 0) {
-        localStorage.clear()
-}
+// if (key == 0) {
+//         localStorage.clear()
+// }
 
 
-sessionStorage.getItem("name")
-sessionStorage.clear()
-sessionStorage.removeItem("name")
-sessionStorage.setItem("name", "harry")
-sessionStorage.removeItem("name")
-window.onstorage = (e) => {
-        alert("changed")
-        console.log(e)
-}
+// sessionStorage.getItem("name")
+// sessionStorage.clear()
+// sessionStorage.removeItem("name")
+// sessionStorage.setItem("name", "Himank")
+// sessionStorage.removeItem("name")
+// window.onstorage = (e) => {
+//         alert("changed")
+//         console.log(e)
+// }
+
+// let a = {
+//     name2: "Himank",
+//     language: "JavaScript",
+//     run: () => {
+//       alert("self run")
+//     }
+//   }
+//   console.log(a)
+  
+  
+//   let p = {
+//     run: () => {
+//       alert("run")
+//     }
+//   }
+  
+//   p.__proto__ = {
+//     name: "Jackie"
+//   }
+  
+//   a.__proto__ = p
+//   a.run()
+//   console.log(a.name)
+
+
+
+//   class RailwayForm {
+//     submit() {
+//       alert(this.name + ": Your form is submitted for train number: " + this.trainno)
+//     }
+//     cancel() {
+//       alert(this.name + ": This form is cancelled for train number: " + this.trainno)
+//     }
+//     fill(givenname, trainno) {
+//       this.name = givenname
+//       this.trainno = trainno
+//     }
+//   }
+  
+//   // Create a form for Himank
+//   var HimankForm = new RailwayForm()
+//   // Fill the form with Harry's details
+//   HimankForm.fill("Harry", 145316)
+  
+//   // Create a forms for Rohan
+//   let rohanForm1 = new RailwayForm()
+//   let rohanForm2 = new RailwayForm()
+//   // Fill the forms with Rohan's details
+//   rohanForm1.fill("Rohan", 222420)
+//   rohanForm2.fill("Rohan", 2229211)
+  
+//   HimankForm.submit()
+//   rohanForm1.submit()
+//   rohanForm2.submit()
+//   rohanForm1.cancel()
+
+
+//   class RailwayForm {
+//     constructor(givenname, trainno, address) {
+//       console.log("CONSTRUCTOR CALLED..." + givenname + " " + trainno)
+//       this.name = givenname
+//       this.trainno = trainno
+//       this.address = address
+//     }
+  
+//     preview() {
+//       alert(this.name + ": Your form is for Train number: " + this.trainno + " and your address is " + this.address)
+//     }
+  
+//     submit() {
+//       alert(this.name + ": Your form is submitted for train number: " + this.trainno)
+//     }
+  
+//     cancel() {
+//       alert(this.name + ": This form is cancelled for train number: " + this.trainno)
+//       this.trainno = 0
+//     }
+//   }
+  
+//   var HimankForm = new RailwayForm("Himank", 13488, "420, Pacific Ocean, Ocean, Bihar - 0000555")
+//   HimankForm.preview()
+//   HimankForm.submit()
+//   HimankForm.cancel()
+//   HimankForm.preview()
+
+//   class Animal {
+//     constructor(name, color) {
+//       this.name = name
+//       this.color = color
+//     }
+//     run() {
+//       console.log(this.name + " is running!")
+//     }
+//     shout() {
+//       console.log(this.name + " is barking!")
+//     }
+//   }
+  
+//   class Monkey extends Animal {
+//     eatBanana() {
+//       console.log(this.name + " is eating banana")
+//     }
+//     hide() {
+//       console.log(`${this.name} is hiding`)
+//     }
+//   }
+  
+//   let ani = new Animal("Bruno", "white")
+//   let m = new Monkey("Chimpu", "orange")
+  
+//   ani.shout()
+//   m.eatBanana()
+//   m.hide()
+//   // ani.hide() //This will throw an error
+
+
+//   class Employee {
+//     constructor(name) {
+//       console.log(`${name} - Employee's constructor is here`)
+//       this.name = name
+//     }
+//     login() {
+//       console.log(`Employee has logged in`);
+//     }
+  
+//     logout() {
+//       console.log(`Employee has logged out`);
+//     }
+  
+//     requestLeaves(leaves) {
+//       console.log(`Employee has requested ${leaves} leaves - Auto approved`)
+//     }
+//   }
+  
+//   class Programmer extends Employee {
+//     constructor(name) {
+//       super(name)
+//       console.log(`This is a newly written constructor`)
+//     }
+//     // constructor(...args){ ---> If there is no constructor in the child class, this is created automatically
+//     //   super(...args)
+//     // }
+//     requestCoffee(x) {
+//       console.log(`Employee has requested ${x} coffees`)
+//     }
+//     requestLeaves(leaves) {
+//       super.requestLeaves(4)
+//       console.log("One extra is granted")
+//       // console.log(`Employee has requested ${leaves + 1} leaves (One extra)`)
+  
+//     }
+//   }
+  
+//   let e = new Programmer("Himank")
+//   e.login()
+//   e.requestLeaves(3)
+
+
+//   class Employee {
+//     constructor(name) {
+//       console.log(`${name} - Employee's constructor is here`)
+//       this.name = name
+//     }
+//     login() {
+//       console.log(`Employee has logged in`);
+//     }
+  
+//     logout() {
+//       console.log(`Employee has logged out`);
+//     }
+  
+//     requestLeaves(leaves) {
+//       console.log(`Employee has requested ${leaves} leaves - Auto approved`)
+//     }
+//   }
+  
+//   class Programmer extends Employee {
+//     constructor(name) {
+//       super(name)
+//       console.log(`This is a newly written constructor`)
+//     }
+//     // constructor(...args){ ---> If there is no constructor in the child class, this is created automatically
+//     //   super(...args)
+//     // }
+//     requestCoffee(x) {
+//       console.log(`Employee has requested ${x} coffees`)
+//     }
+//     requestLeaves(leaves) {
+//       super.requestLeaves(4)
+//       console.log("One extra is granted")
+//       // console.log(`Employee has requested ${leaves + 1} leaves (One extra)`)
+  
+//     }
+//   }
+  
+//   let e1 = new Programmer("Harry")
+//   e1.login()
+//   e1.requestLeaves(3)
+
+//   class Animal {
+//     constructor(name) {
+//       this.name = Animal.capitalize(name)
+//     }
+//     walk() {
+//       alert("Animal " + this.name + " is walking")
+//     }
+//     static capitalize(name) {
+//       return name.charAt(0).toUpperCase() + name.substr(1, name.length)
+//     }
+//   }
+  
+//   j = new Animal("jack")
+//   j.walk()
+//   // console.log(j.capitalize("thisa")) // --- > this doesnt work
+
+//   let a = () => {
+//     return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//         resolve(456)
+//       }, 4000)
+//     })
+//   }
+  
+//   (async () => {
+//     let b = await a()
+//     console.log(b)
+//     let c = await a()
+//     console.log(c)
+//     let d = await a()
+//     console.log(d)
+//   })()
+  
+  
+//   // console.log(d) // Throws error
+
+//   let p = 9
+//   function ax() {
+//     let a = 8;
+//     console.log(p)
+//     console.log(a)
+//   }
+  
+//   ax()
+//   console.log(p)
+//   console.log(a)
+
+// // let a;
+// // Following two lines will run successfully due to JavaScript hoisting
+// console.log(a)
+// greet()
+// var greet = function() {
+//   console.log("Good morning")
+// }
+
+// var a = 9; // Declaration hoisted to the top but initialization is not
+// console.log(a)
+
+// // function init() {
+// //   var name = 'Mozilla'; // name is a local variable created by init
+// //   function displayName() {
+// //     // displayName() is the inner function, a closure
+// //     console.log(name); // use variable declared in the parent function
+// //   }
+// //   name = "Himank"
+// //   return displayName;
+// // }
+// // let c = init();
+// // c()
+
+
+// function returnFunc() {
+//     const x = () => {
+//       let a = 1
+//       console.log(a)
+//       const y = () => {
+//         // let a = 2
+//         console.log(a)
+//         const z = () => {
+//           // let a = 3
+//           console.log(a)
+//         }
+//         z()
+//       }
+//       a = 999
+//       y()
+//     }
+//     return x
+//   }
+  
+//   let a = returnFunc()
+//   a()
+  
+//   const sayHello = name => {
+//     console.log("greeting" + " " + name)
+//     console.log("hi")
+//   }
+  
+//   const x = {
+//     name: "Himank",
+//     role: "Js Developer",
+//     exp: 30,
+//     show: function() {
+//       // let that = this
+//       // console.log(this)
+//       setTimeout(() => {
+//         console.log(`The name is ${this.name}\nThe role is ${this.role}`)
+//       }, 2000)
+//     }
+//   }
+//   sayHello("Himank", "Good Afternoon")
+//   // console.log(x.name, x.exp)
+//   // x.show()  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
